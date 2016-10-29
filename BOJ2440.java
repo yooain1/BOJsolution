@@ -1,0 +1,28 @@
+/*
+  Baekjoon Online Judge
+
+  2440번 :: 별찍기 - 3
+  첫째 줄에는 별 N개, 둘째 줄에는 별 N-1개, ..., N번째 줄에는 별 1개를 찍는 문제
+*/
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        int n, i, j;
+        Scanner keyboard = new Scanner(System.in);
+
+        n = keyboard.nextInt();
+
+
+        for(i=0; i<n; i++){
+
+            for (j=i; j<n; j++)
+                System.out.print("*");
+            System.out.println();
+
+        }
+    }
+}
